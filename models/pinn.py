@@ -69,7 +69,7 @@ class PINN(nn.Module):
         p_high: Buffer of parameter upper bounds.
     """
 
-    def __init__(self, hidden: Tuple[int, ...] =(128, 128, 128)): #(256, 256, 256)) -> None:
+    def __init__(self, hidden: Tuple[int, ...] =(64, 64)): #(128, 128, 128)): #(256, 256, 256)) -> None:
         """Initialize the PINN.
 
         Args:

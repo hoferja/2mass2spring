@@ -49,7 +49,7 @@ def parse_args() -> argparse.Namespace:
     p.add_argument("--weight_decay", type=float, default=1e-5)
     p.add_argument("--patience", type=int, default=20)
     p.add_argument("--val_frac", type=float, default=0.10)
-    p.add_argument("--n_collocation", type=int, default=0)
+    p.add_argument("--n_collocation", type=int, default=500)
     p.add_argument("--device", type=str, default="cuda")
     return p.parse_args()
 

@@ -7,7 +7,7 @@ compliant base, excited by a chirp on the actuated mass. See
 ## Layout
 
 ```
-project2/
+2mass2spring/
     constants.py             # physical & sampling constants, N_VALUES, STRATA
     utils.py                 # dataset I/O, normalizers, metrics, timing
     data/
@@ -42,6 +42,8 @@ python run_sweep_pinn.py            # lambda search at N=1000, then sweep
 # 3. Comparison artifacts.
 python analyze.py --results_dir results
 ```
+
+** PLEASE NOTE: due to a bug, CUDA support does not yet work, please add the flag `--device "cpu"` after the python file name in stage 2.
 
 ## Unified metrics schema
 
